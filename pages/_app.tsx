@@ -36,8 +36,10 @@ require("@solana/wallet-adapter-react-ui/styles.css");
 require("../styles/globals.css");
 
 const App: FC<AppProps> = (props: {
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
   Component: any;
   emotionCache?: EmotionCache | undefined;
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
   pageProps: any;
 }) => {
   const { Component, emotionCache = clientSideEmotionCache, pageProps } = props;
